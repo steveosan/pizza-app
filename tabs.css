@@ -1,0 +1,73 @@
+body {
+    padding: 25px;
+    background: url("https://cdn.pixabay.com/photo/2021/04/06/14/55/pizza-6156621_1280.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    font-family:courier,arial,helvetica;
+    font-weight: bold;
+}
+
+.tab-pane {
+
+    padding: 10px;
+}
+
+#home {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    padding-top: 35px;
+    background: #fdd19f;
+    opacity: 95%;
+    text-align: center;
+}
+
+#shop {
+    background-color: rgb(188, 218, 188);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    padding-top: 35px;
+    background: #A89D9B;
+    opacity: 95%;
+    text-align: center;
+}
+
+#contact {
+    background-color:#4F2E20;
+    color: #DC9E56;
+    opacity: 95%;
+    text-align: center;
+}
+
+.container nav{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    background-color: #8F8892;
+    margin-top: 6%;
+}
+.container a:hover{
+    background-color: rgb(248, 248, 248);
+}
+
+.container a{
+    text-decoration: none;
+    color: black;
+}
+#size{
+    display: inline-grid;
+    margin-right: 5%;
+    text-align: left;
+}
+#crustType{
+    display: inline-grid;
+    margin-right: 5%;
+    text-align: left;
+}
+#meatType{
+    display: inline-grid;
+    margin-right: 5%;
+    text-align: left;
+}
+#veggies{
+    display: inline-grid; 
+    margin-right: 5%;
+    text-align: left;
+}

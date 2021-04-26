@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pizza App</title>
+    <!-- Bootstrap styles first -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Our styles -->
+    <link href="tabs.css" rel="stylesheet" type="text/css"/>
+</head>
+
+<body id="page">
+    <div class="container">
+        <nav>
+            <ul id="tabs" class="nav nav-tabs">
+                <li class="nav-item">
+                    <a class="nav-link active" href="#home">Pizza Creation</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#shop">Delivery Information</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Order Confirmation</a>
+                </li>
+            </ul>
+        </nav>
+
+        <div class="tab-content">
+            <div id="home" class="tab-pane active">
+                <h1>Let Us Build Your Perfect Pizza!</h1>
+                <div id="size">
+                <fieldset>
+                    <legend>Size?</legend>
+                    <input type="radio" id="small" name="size" data-price="7.00" data-value="Small" checked>
+                    <label for="small">Small</label>
+                    <br>
+                    <input type="radio" id="medium" name="size" data-price="9.00" data-value="Medium">
+                    <label for="medium">Medium</label>
+                    <br>
+                    <input type="radio" id="large" name="size" data-price="12.00" data-value="Large">
+                    <label for="large">Large</label>
+                    <br>
+                </fieldset>
+            </div>
+            <div id="crustType">
+                <fieldset>
+                    <legend>Type of Crust?</legend>
+                    <input type="radio" id="thin" name="crust" data-price="0" data-value="Thin" checked>
+                    <label for="thin">Thin</label>
+                    <br>
+                    <input type="radio" id="pan" name="crust" data-price="0" data-value="Pan" >
+                    <label for="pan">Pan</label>
+                    <br>
+                    <input type="radio" id="gluten" name="crust" data-price="0" data-value="Gluten Free">
+                    <label for="gluten">Gluten Free</label>
+                    <br>
+                </fieldset>
+            </div>
+            <div id="meatType">
+                <fieldset>
+                    <legend>Type of Meat?</legend>
+                    <input type="checkbox" id="sausage" name="meat" data-price="1.50" value="Sausage" data-value="Sausage">
+                    <label for="sausage">sausage</label>
+                    <br>
+                    <input type="checkbox" id="pepperoni" name="meat" data-price="1.50" value="Pepperoni" data-value="Pepperoni">
+                    <label for="pepperoni">pepperoni</label>
+                    <br>
+                    <input type="checkbox" id="ham" name="meat" data-price="1.50" value="Ham" data-value="Ham">
+                    <label for="ham">ham</label>
+                    <br>
+                </fieldset>
+            </div>
+            <div id="veggies">
+                <fieldset>
+                    <legend>Type of veggies?</legend>
+                    <input type="checkbox" id="Mushrooms" name="veg" data-price="1.0" data-value="Mushroom">
+                    <label for="Mushrooms">mushroom</label>
+                    <br>
+                    <input type="checkbox" id="Onions" name="veg" data-price="1.0" data-value="Onions">
+                    <label for="Onions">Onions</label>
+                    <br>
+                    <input type="checkbox" id="Peppers" name="veg" data-price="1.0" data-value="Green Peppers">
+                    <label for="Peppers">Green Peppers</label>
+                    <br>
+                </fieldset>
+            </div>
+                <br>
+
+            </div>
+
+            <div id="shop" class="tab-pane">
+                <h2>Tell us about yourself!</h2>
+                <fieldset>
+                    <legend>Contact Information</legend>
+                    <br>
+                    <label for="fname">Enter First Name:</label>
+                    <input type="text" id="fname" placeholder="first name here" required>
+                    <br>
+                    <label for="lname">Enter Last Name:</label>
+                    <input type="text" id="lname" placeholder="last name here" required>
+                    <br>
+                    <label for="lname">Street Address:</label>
+                    <input type="text" id="address" placeholder="1234 main street" required>
+                    <br>
+                    <label for="lname">Enter Phone #:</label>
+                    <input type="phone" id="phone" placeholder="012-345-6789" required>
+                    <br>
+                </fieldset>
+                <br>
+
+            </div>
+
+            <div id="contact" class="tab-pane">
+                <h2>Hello <span id="fname"></span>, let's make sure your pizza is perfect!</h2>
+                <p>Quality is our top priority!</p>
+                <p class="output2"> <span id="pizzaInfo"></span></p>
+                <p class="output2"> <span id="total"></span></p>
+                <p class="output2"> <span id="totalTax"></span></p>
+                <p class="output2"> <span id="grandTotal"></span></p>
+                <p> Now lets check your delivery information!</p>              
+                <p class="output2"> <span id="name"></span></p>
+                <input type="button" id="save_value" name="save_value" value="Place Order">
+            </div>
+        </div>
+    </div>
+
+    <!-- jQuery first -- BEWARE OF THE SLIM VERSION FROM BOOTSTRAP -->
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <!-- Popper and Bootstrap second -->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- Our code last -->
+    <script src="tabs.js"></script>
+
+</body>
+
+</html>
